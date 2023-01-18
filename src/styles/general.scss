@@ -17,6 +17,7 @@ body {
     margin: 0 auto;
 }
 
+//flex family
 .d-flex {
     display: flex;
 }
@@ -27,4 +28,16 @@ body {
 
 .justify-between {
     justify-content: space-between;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
 }

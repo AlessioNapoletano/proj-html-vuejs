@@ -1,12 +1,17 @@
 <script>
+//Header component's
 import HeaderNavbar from './components/HeaderNavbar.vue'
 import HeaderJumbo from './components/HeaderJumbo.vue'
+
+//Main component's
+import MainService from './components/MainService.vue'
 
 export default {
   name: 'App',
   components: {
     HeaderNavbar,
-    HeaderJumbo
+    HeaderJumbo,
+    MainService
   }
 }
 </script>
@@ -16,6 +21,10 @@ export default {
     <HeaderNavbar />
     <HeaderJumbo />
   </header>
+
+  <main>
+    <MainService />
+  </main>
 </template>
 
 

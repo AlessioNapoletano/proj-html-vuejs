@@ -70,7 +70,6 @@ export default {
             .line {
                 margin: .9rem 1rem 0 0;
                 width: 50px;
-                height: 0px;
                 border: 2px solid $line-light-blue;
             }
         }
@@ -104,8 +103,6 @@ export default {
                 }
             }
         }
-
-
     }
 }
 
