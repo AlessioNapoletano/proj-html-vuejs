@@ -1,10 +1,12 @@
 <script>
 import HeaderNavbar from './components/HeaderNavbar.vue'
+import HeaderJumbo from './components/HeaderJumbo.vue'
 
 export default {
   name: 'App',
   components: {
-    HeaderNavbar
+    HeaderNavbar,
+    HeaderJumbo
   }
 }
 </script>
@@ -12,6 +14,7 @@ export default {
 <template>
   <header>
     <HeaderNavbar />
+    <HeaderJumbo />
   </header>
 </template>
 
