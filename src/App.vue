@@ -5,12 +5,10 @@ export default {
 </script>
 
 <template>
-  <div>
-
-  </div>
 </template>
 
 
 <style lang="scss">
-
+@use './styles/partials/variables' as *;
+@use './styles/general.scss' as *;
 </style>
