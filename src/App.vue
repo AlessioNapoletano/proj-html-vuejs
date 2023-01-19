@@ -14,7 +14,8 @@ export default {
     HeaderNavbar,
     HeaderJumbo,
     MainService,
-    MainAboutUs
+    MainAboutUs,
+    MainDeliverCare
   }
 }
 </script>
@@ -28,6 +29,7 @@ export default {
   <main>
     <MainService />
     <MainAboutUs />
+    <MainDeliverCare />
   </main>
 </template>
 
