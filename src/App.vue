@@ -5,13 +5,16 @@ import HeaderJumbo from './components/HeaderJumbo.vue'
 
 //Main component's
 import MainService from './components/MainService.vue'
+import MainAboutUs from './components/MainAboutUs.vue'
+import MainDeliverCare from './components/MainDeliverCare.vue'
 
 export default {
   name: 'App',
   components: {
     HeaderNavbar,
     HeaderJumbo,
-    MainService
+    MainService,
+    MainAboutUs
   }
 }
 </script>
@@ -24,6 +27,7 @@ export default {
 
   <main>
     <MainService />
+    <MainAboutUs />
   </main>
 </template>
 
@@ -31,4 +35,8 @@ export default {
 <style lang="scss">
 @use './styles/partials/variables' as *;
 @use './styles/general.scss' as *;
+
+main {
+  background-color: $main-blue-color;
+}
 </style>
