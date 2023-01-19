@@ -11,24 +11,28 @@ export default {
             serviceList:
                 [
                     {
-                        image: '',
+                        // Statistical icon: <i class="fa-brands fa-think-peaks"></i>
+                        image: 'fa-brands fa-think-peaks',
                         title: 'STATISTICAL CONSULTING',
-                        description: 'when, while lovely valley teems with vapour around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a'
+                        description: 'When, while lovely valley teems with vapour around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a'
                     },
                     {
-                        image: '',
+                        //Megaphone icon: <i class="fa-solid fa-bullhorn"></i>
+                        image: 'fa-solid fa-bullhorn',
                         title: 'DIGITAL CONSULTING',
-                        description: 'when, while lovely valley teems with vapour around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a'
+                        description: 'When, while lovely valley teems with vapour around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a'
                     },
                     {
-                        image: '',
+                        //Wallet icon: <i class="fa-regular fa-wallet"></i>
+                        image: 'fa-solid fa-wallet',
                         title: 'BANKING CONSULTING',
-                        description: 'when, while lovely valley teems with vapour around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a'
+                        description: 'When, while lovely valley teems with vapour around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a'
                     },
                     {
-                        image: '',
+                        //Enterprise icon: <i class="fa-solid fa-arrows-to-dot"></i>
+                        image: 'fa-solid fa-arrows-to-dot',
                         title: 'ENTERPRISE CONSULTING',
-                        description: 'when, while lovely valley teems with vapour around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a'
+                        description: 'When, while lovely valley teems with vapour around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a'
                     }
                 ]
         }
@@ -49,36 +53,22 @@ export default {
             </div>
 
             <div class="box-service d-flex flex-wrap">
-                <article class="service">
-                    <div class="image">
-                        <!--immagine-->
+                <article v-for="service in serviceList" class="service d-flex">
+                    <div class="image d-flex justify-center align-center">
+                        <i :class="service.image"></i>
                     </div>
 
                     <div class="body">
                         <h2>
-                            <!--title-->
+                            {{ service.title }}
                         </h2>
 
                         <p>
-                            <!--body-->
+                            {{ service.description }}
                         </p>
                     </div>
 
                 </article>
-
-                <article class="service">
-
-                </article>
-
-                <article class="service">
-
-                </article>
-
-                <article class="service">
-
-                </article>
-
-
             </div>
 
         </div>
@@ -93,27 +83,74 @@ section {
     background-color: white;
     position: relative;
 
-
     .consulants-service {
         padding-top: 7rem;
         color: $main-blue-color;
         width: 85%;
-        border: 1px solid black;
         height: 100%;
 
-        .line {
-            margin-left: 2rem;
-            width: 1206px;
-            border: 2px solid $line-light-blue;
-        }
+        .title {
+            margin-bottom: 7rem;
 
-        .box-service {
-            .service {
-                width: calc(100% / 2);
-                border: 1px solid black;
-                height: 18rem;
+            h1 {
+                font-weight: 800;
+            }
+
+            .line {
+                margin-left: 2rem;
+                width: 1200px;
+                border: 2px solid $line-light-blue;
             }
         }
+    }
+
+    .service {
+        width: calc(100% / 2);
+        height: 18rem;
+
+
+        .image {
+            width: 72px;
+            height: 64px;
+            border-radius: 100%;
+
+            background-color: $main-red-color;
+
+            i {
+                font-size: 2rem;
+                color: $main-white-color;
+            }
+        }
+
+        .body {
+            width: 43%;
+            margin-left: 2rem;
+
+            h2 {
+                padding: 1rem 0;
+                font-weight: 800;
+            }
+
+        }
+
+        /*
+        <div class="image">
+                        <i :class="service.image"></i>
+                    </div>
+
+                    <div class="body">
+                        <h2>
+                            {{ service.title }}
+                        </h2>
+
+                        <p>
+                            {{ service.description }}
+                        </p>
+                    </div>
+
+        */
+
+
     }
 }
 </style>
