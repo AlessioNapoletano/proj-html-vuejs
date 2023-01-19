@@ -96,8 +96,8 @@ export default {
 
 section.blog {
     margin-top: 10rem;
-    height: 50rem;
     color: $main-white-color;
+    padding-bottom: 20rem;
 
     .container {
         height: 100%;

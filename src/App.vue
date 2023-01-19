@@ -1,15 +1,18 @@
 <script>
-//Header component's
+//Header components
 import HeaderNavbar from './components/HeaderNavbar.vue'
 import HeaderJumbo from './components/HeaderJumbo.vue'
 
-//Main component's
+//Main components
 import MainService from './components/MainService.vue'
 import MainAboutUs from './components/MainAboutUs.vue'
 import MainDeliverCare from './components/MainDeliverCare.vue'
 import MainProject from './components/MainProject.vue'
 import MainTestimonial from './components/MainTestimonial.vue'
 import MainBlog from './components/MainBlog.vue'
+
+//Footer components
+import FooterGetStarted from './components/footerGetStarted.vue'
 
 export default {
   name: 'App',
@@ -21,7 +24,8 @@ export default {
     MainDeliverCare,
     MainProject,
     MainTestimonial,
-    MainBlog
+    MainBlog,
+    FooterGetStarted
   }
 }
 </script>
@@ -40,6 +44,10 @@ export default {
     <MainTestimonial />
     <MainBlog />
   </main>
+
+  <footer>
+    <FooterGetStarted />
+  </footer>
 </template>
 
 

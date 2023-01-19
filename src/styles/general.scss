@@ -54,6 +54,10 @@ body {
     flex-wrap: wrap;
 }
 
+.flex-column {
+    flex-direction: column;
+}
+
 .d-inline {
     display: inline;
 }
