@@ -7,6 +7,7 @@ import HeaderJumbo from './components/HeaderJumbo.vue'
 import MainService from './components/MainService.vue'
 import MainAboutUs from './components/MainAboutUs.vue'
 import MainDeliverCare from './components/MainDeliverCare.vue'
+import MainProject from './components/MainProject.vue'
 
 export default {
   name: 'App',
@@ -15,7 +16,8 @@ export default {
     HeaderJumbo,
     MainService,
     MainAboutUs,
-    MainDeliverCare
+    MainDeliverCare,
+    MainProject
   }
 }
 </script>
@@ -30,6 +32,7 @@ export default {
     <MainService />
     <MainAboutUs />
     <MainDeliverCare />
+    <MainProject />
   </main>
 </template>
 

@@ -58,6 +58,10 @@ export default {
 
 
 <style lang="scss" scoped>
+.container {
+    position: absolute;
+}
+
 img {
     margin-top: .5rem;
     width: 200px;
