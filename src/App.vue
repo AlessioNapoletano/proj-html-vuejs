@@ -8,6 +8,7 @@ import MainService from './components/MainService.vue'
 import MainAboutUs from './components/MainAboutUs.vue'
 import MainDeliverCare from './components/MainDeliverCare.vue'
 import MainProject from './components/MainProject.vue'
+import MainTestimonial from './components/MainTestimonial.vue'
 
 export default {
   name: 'App',
@@ -17,7 +18,8 @@ export default {
     MainService,
     MainAboutUs,
     MainDeliverCare,
-    MainProject
+    MainProject,
+    MainTestimonial
   }
 }
 </script>
@@ -33,6 +35,7 @@ export default {
     <MainAboutUs />
     <MainDeliverCare />
     <MainProject />
+    <MainTestimonial />
   </main>
 </template>
 
