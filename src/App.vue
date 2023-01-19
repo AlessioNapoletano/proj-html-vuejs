@@ -9,6 +9,7 @@ import MainAboutUs from './components/MainAboutUs.vue'
 import MainDeliverCare from './components/MainDeliverCare.vue'
 import MainProject from './components/MainProject.vue'
 import MainTestimonial from './components/MainTestimonial.vue'
+import MainBlog from './components/MainBlog.vue'
 
 export default {
   name: 'App',
@@ -19,7 +20,8 @@ export default {
     MainAboutUs,
     MainDeliverCare,
     MainProject,
-    MainTestimonial
+    MainTestimonial,
+    MainBlog
   }
 }
 </script>
@@ -36,6 +38,7 @@ export default {
     <MainDeliverCare />
     <MainProject />
     <MainTestimonial />
+    <MainBlog />
   </main>
 </template>
 
