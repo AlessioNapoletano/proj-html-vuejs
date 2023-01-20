@@ -66,7 +66,7 @@ export default {
     position: absolute;
     color: $main-white-color;
     z-index: 1;
-    left: 7%;
+    left: 10%;
 
     .logo {
         padding-top: 1.5rem;

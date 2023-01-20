@@ -106,6 +106,11 @@ section {
         .image {
             width: calc((100% / 3));
             height: 22rem;
+            overflow: hidden;
+
+            &.image:hover img {
+                transform: scale(1.5);
+            }
 
             &:nth-child(2) {
                 margin: 0 1.5rem;
