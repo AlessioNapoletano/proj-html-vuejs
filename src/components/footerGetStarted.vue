@@ -47,7 +47,7 @@ section {
         }
 
         p {
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
             font-size: 1.2rem;
             text-align: center;
             padding: 0 5rem;

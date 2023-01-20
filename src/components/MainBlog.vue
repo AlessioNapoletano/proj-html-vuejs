@@ -95,7 +95,6 @@ export default {
 @use '../styles/partials/variables' as *;
 
 section.blog {
-    margin-top: 10rem;
     color: $main-white-color;
     padding-bottom: 20rem;
 

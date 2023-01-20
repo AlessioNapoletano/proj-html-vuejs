@@ -24,7 +24,7 @@ export default {
 
                 <div class="copyright">
                     <p>
-                        CopyRight &copy; 2020 Phlox Consulting. All Rights Reserved.
+                        CopyRight &copy; 2023 Phlox Consulting. All Rights Reserved.
                     </p>
                 </div>
 
@@ -41,8 +41,8 @@ export default {
 @use '../styles/partials/variables' as *;
 
 section.end-footer {
-    height: 10rem;
     color: $main-grey-color;
+    padding-bottom: 3rem;
 
     .container {
 
@@ -54,9 +54,14 @@ section.end-footer {
         li {
             margin-bottom: .2rem;
 
+            &:hover {
+                display: none;
+            }
+
             a {
                 color: $main-grey-color;
             }
+
 
         }
     }
