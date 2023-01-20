@@ -47,9 +47,10 @@ export default {
 
         <nav>
             <ul class="d-flex">
-                <li v-for="item in navList" :class="(item.current) ? 'current-selected' : ''"> {{
-                    item.name
-                }}
+                <li v-for="item in navList" :class="(item.current) ? 'current-selected' : ''">
+                    <a href="#">
+                        {{ item.name }}
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -58,22 +59,35 @@ export default {
 
 
 <style lang="scss" scoped>
-.container {}
+@use '../styles/partials/variables' as *;
 
-img {
-    margin-top: .5rem;
-    width: 200px;
+.container {
+    position: absolute;
+    color: $main-white-color;
+    z-index: 1;
+    left: 7%;
+
+    .logo {
+        padding-top: 1.5rem;
+
+        img {
+            width: 150px;
+        }
+    }
 }
 
 li {
-    display: inline;
-    list-style-type: none;
-    padding: 1rem;
+    padding-top: 1.5rem;
+    margin: 0 1rem 1rem 1rem;
     cursor: pointer;
+
+    a {
+        color: $main-white-color;
+    }
 }
 
 .current-selected {
     font-weight: bold;
-    border-top: 2px solid black;
+    border-top: 3px solid $main-white-color;
 }
 </style>
