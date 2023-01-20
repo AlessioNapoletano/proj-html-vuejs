@@ -82,10 +82,11 @@ section.testimonial {
     .container {
 
         .small-text {
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
 
             p {
                 margin: 0 auto;
+                font-size: 1.2rem;
             }
 
             .line {
@@ -100,7 +101,6 @@ section.testimonial {
             width: 45%;
             text-align: end;
 
-
             h1 {
                 font-size: 3rem;
             }
@@ -110,9 +110,9 @@ section.testimonial {
 
 section.costumer-feedback {
     background-color: $main-white-color;
-    height: 20rem;
     width: 90%;
     margin-inline-start: auto;
+    margin-bottom: 14rem;
 
     .wrapper {
         width: 90%;
@@ -131,7 +131,6 @@ section.costumer-feedback {
                 font-weight: 800;
             }
         }
-
     }
 
 }

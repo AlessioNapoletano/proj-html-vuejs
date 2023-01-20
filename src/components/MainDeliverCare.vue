@@ -36,15 +36,15 @@ export default {
 
 section.deliver-care {
     background-color: $line-light-blue;
-    height: 20rem;
+    padding: 8rem 0;
     width: 90%;
+    margin-bottom: 13rem;
 
     position: relative;
 
     .wrapper {
         width: 60%;
         margin: 0 auto;
-        height: 100%;
     }
 
     .slogan {
@@ -58,6 +58,7 @@ section.deliver-care {
 
     .description {
         width: 40%;
+        font-size: 1.1rem;
     }
 
     .button {

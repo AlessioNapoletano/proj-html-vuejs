@@ -56,8 +56,7 @@ export default {
 @use '../styles/partials/variables' as *;
 
 section {
-    margin-top: 10rem;
-    height: 50rem;
+    margin-bottom: 15rem;
     color: $main-white-color;
 
     .small-text {
