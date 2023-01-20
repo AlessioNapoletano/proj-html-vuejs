@@ -43,11 +43,13 @@ export default {
 
 <template>
     <section class="advisory-service d-flex justify-end">
-        <div class="consulants-service">
+        <div class="container-sm consulants-service">
             <div class="title d-flex align-center">
-                <h1>
-                    OUR CONSULANTS CAN HELP YOU
-                </h1>
+                <div class="text">
+                    <h1>
+                        OUR CONSULANTS CAN HELP YOU
+                    </h1>
+                </div>
 
                 <div class="line"></div>
             </div>
@@ -79,26 +81,26 @@ export default {
 @use '../styles/partials/variables' as *;
 
 section {
-    height: 50rem;
-    background-color: white;
     position: relative;
 
     .consulants-service {
-        padding-top: 7rem;
-        color: $main-blue-color;
-        width: 85%;
-        height: 100%;
+        padding: 7rem 0rem 3rem 10rem;
+        background-color: $main-white-color;
 
         .title {
             margin-bottom: 7rem;
 
-            h1 {
-                font-weight: 800;
+            .text {
+                width: 26%;
+
+                h1 {
+                    font-weight: 800;
+                }
             }
 
             .line {
-                margin-left: 2rem;
-                width: 1200px;
+                margin-left: 1rem;
+                width: 74%;
                 border: 2px solid $line-light-blue;
             }
         }
@@ -107,7 +109,6 @@ section {
     .service {
         width: calc(100% / 2);
         height: 18rem;
-
 
         .image {
             width: 72px;
@@ -124,33 +125,18 @@ section {
 
         .body {
             width: 43%;
-            margin-left: 2rem;
+            margin-left: 3rem;
 
             h2 {
-                padding: 1rem 0;
+                padding-bottom: 1rem;
                 font-weight: 800;
+                color: $main-blue-color;
             }
 
+            p {
+                color: $secondary-grey-color;
+            }
         }
-
-        /*
-        <div class="image">
-                        <i :class="service.image"></i>
-                    </div>
-
-                    <div class="body">
-                        <h2>
-                            {{ service.title }}
-                        </h2>
-
-                        <p>
-                            {{ service.description }}
-                        </p>
-                    </div>
-
-        */
-
-
     }
 }
 </style>
