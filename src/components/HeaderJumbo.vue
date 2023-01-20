@@ -9,7 +9,7 @@ export default {
     <div class="wrapper d-flex">
         <div class="left-box">
             <div class="slogan">
-                <div class="small-text d-flex">
+                <div class="small-text d-flex align-center">
                     <div class="line"></div>
                     <p>
                         ALWATS THE BEST WAY YOU NEED IT
@@ -22,13 +22,13 @@ export default {
                     </h1>
                 </div>
 
-                <div class="button-icon d-flex">
+                <div class="button-icon d-flex aling-end">
                     <button class="btn">
                         READ MORE
                     </button>
 
-                    <div class="icon">
-                        <i class="fa-solid fa-play"></i>
+                    <div class="icon d-flex justify-center align-center p-relative">
+                        <i class="fa-solid fa-play p-absolute"></i>
                     </div>
                 </div>
 
@@ -64,8 +64,7 @@ export default {
 
         .small-text {
             font-size: 1.2rem;
-            display: flex;
-            align-items: center;
+            margin-bottom: 2rem;
 
             .line {
                 margin: .9rem 1rem 0 0;
@@ -75,10 +74,11 @@ export default {
         }
 
         .big-text {
-            margin-bottom: 1rem;
+            margin-bottom: 3rem;
 
             h1 {
                 font-size: 6rem;
+                line-height: 5.2rem;
             }
         }
 
@@ -88,18 +88,20 @@ export default {
                 font-size: 1.1rem;
                 background-color: $line-light-blue;
                 border: none;
-                margin-right: 2rem;
+                margin-right: 2.5rem;
             }
 
             .icon {
                 font-size: 1rem;
                 border: 2px solid $main-white-color;
                 border-radius: 100%;
-                padding: .6rem 1.5rem;
+                height: 4rem;
+                width: 4rem;
 
                 i {
                     color: $line-light-blue;
                     margin-top: .9rem;
+                    top: 10px;
                 }
             }
         }

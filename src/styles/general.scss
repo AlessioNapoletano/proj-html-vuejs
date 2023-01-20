@@ -60,6 +60,10 @@ a {
     align-items: flex-start;
 }
 
+.aling-end {
+    align-items: flex-end;
+}
+
 .flex-wrap {
     flex-wrap: wrap;
 }
@@ -70,4 +74,12 @@ a {
 
 .d-inline {
     display: inline;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.p-absolute {
+    position: absolute;
 }
