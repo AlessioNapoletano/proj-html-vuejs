@@ -1,5 +1,5 @@
 // import font
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Roboto:wght@100;300;400;500;700&display=swap');
 
 // Reset
 * {
@@ -9,7 +9,9 @@
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 li {
