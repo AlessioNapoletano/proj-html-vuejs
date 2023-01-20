@@ -32,8 +32,8 @@ section {
     background-image: url('../assets/images/business-people-working-together-on-project-and-B3MZ4TX.jpg');
     background-repeat: no-repeat;
     height: 30rem;
-
     color: $main-white-color;
+    margin-bottom: 6rem;
 
     .wrapper {
         width: 30%;

@@ -12,7 +12,9 @@ import MainTestimonial from './components/MainTestimonial.vue'
 import MainBlog from './components/MainBlog.vue'
 
 //Footer components
-import FooterGetStarted from './components/footerGetStarted.vue'
+import FooterGetStarted from './components/FooterGetStarted.vue'
+import FooterNav from './components/FooterNav.vue'
+import EndFooter from './components/EndFooter.vue'
 
 export default {
   name: 'App',
@@ -25,7 +27,9 @@ export default {
     MainProject,
     MainTestimonial,
     MainBlog,
-    FooterGetStarted
+    FooterGetStarted,
+    FooterNav,
+    EndFooter
   }
 }
 </script>
@@ -47,6 +51,8 @@ export default {
 
   <footer>
     <FooterGetStarted />
+    <FooterNav />
+    <EndFooter />
   </footer>
 </template>
 
@@ -56,6 +62,10 @@ export default {
 @use './styles/general.scss' as *;
 
 main {
+  background-color: $main-blue-color;
+}
+
+footer {
   background-color: $main-blue-color;
 }
 </style>
