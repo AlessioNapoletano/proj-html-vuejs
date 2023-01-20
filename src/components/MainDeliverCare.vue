@@ -5,18 +5,22 @@ export default {
 </script>
 
 <template>
-    <section class="deliver-care d-flex align-center justify-around">
-        <div class="slogan">
-            <h1>
-                WE HELP TO DELIVER THE BUSINESS CASE
-            </h1>
+    <section class="deliver-care">
+        <div class="wrapper d-flex align-center justify-between">
+            <div class="slogan">
+                <h1>
+                    WE HELP TO DELIVER THE BUSINESS CASE
+                </h1>
+            </div>
+            <div class="description">
+                <p>
+                    When, while lovely valley teems with vapour around meand meridian sun strikes the upper impenetrable
+                    foliage of my trees, and but a thousand unkown
+                </p>
+            </div>
+
         </div>
-        <div class="description">
-            <p>
-                When, while lovely valley teems with vapour around meand meridian sun strikes the upper impenetrable
-                foliage of my trees, and but a thousand unkown
-            </p>
-        </div>
+
         <div class="button">
             <button>
                 GET STARTED
@@ -37,8 +41,15 @@ section.deliver-care {
 
     position: relative;
 
+    .wrapper {
+        width: 60%;
+        margin: 0 auto;
+        height: 100%;
+    }
+
     .slogan {
-        width: 25%;
+        width: 45%;
+
 
         h1 {
             font-size: 2.5rem;
@@ -46,7 +57,7 @@ section.deliver-care {
     }
 
     .description {
-        width: 23%;
+        width: 40%;
     }
 
     .button {
