@@ -26,7 +26,7 @@ export default {
             </div>
             <nav>
                 <ul class="d-flex">
-                    <li v-for="item in navList">
+                    <li class="nav" v-for="item in navList">
                         <a href="#">{{ item }}</a>
                     </li>
                 </ul>
@@ -53,14 +53,20 @@ section {
 
         nav {
 
-            li {
+            .nav {
                 padding: 0 .8rem;
                 font-size: 1.2rem;
+
+                &.nav:hover a {
+                    color: $main-red-color;
+                }
+
+                a {
+                    color: $main-grey-color;
+                }
             }
 
-            a {
-                color: $main-grey-color;
-            }
+
 
         }
 
@@ -72,6 +78,10 @@ section {
 
                 i {
                     font-size: 1.2rem;
+                }
+
+                i:hover {
+                    color: $main-red-color;
                 }
             }
         }

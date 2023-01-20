@@ -22,7 +22,7 @@ export default {
         </div>
 
         <div class="button">
-            <button>
+            <button class="btn">
                 GET STARTED
             </button>
         </div>
@@ -66,12 +66,19 @@ section.deliver-care {
         bottom: 0px;
         right: 0px;
 
-        button {
+        &:hover .btn {
+            background-color: $main-blue-color;
+        }
+
+        .btn {
             border: none;
             background-color: $main-red-color;
             color: $main-white-color;
-            padding: 1rem 2rem;
             cursor: pointer;
+            transition: .5s;
+            padding: 1.5rem 4rem;
+            font-size: 1.1rem;
+            border: none;
         }
     }
 }

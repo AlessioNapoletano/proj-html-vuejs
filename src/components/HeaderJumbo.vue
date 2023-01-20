@@ -52,7 +52,6 @@ export default {
 
 .left-box {
     width: 30%;
-    height: 60rem;
     background-color: $main-blue-color;
     color: $main-white-color;
     position: relative;
@@ -60,10 +59,10 @@ export default {
     .slogan {
         position: relative;
         top: 306px;
-        left: 124px;
+        left: 192px;
 
         .small-text {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             margin-bottom: 2rem;
 
             .line {
@@ -77,18 +76,27 @@ export default {
             margin-bottom: 3rem;
 
             h1 {
-                font-size: 6rem;
+                font-size: 5.4rem;
                 line-height: 5.2rem;
             }
         }
 
         .button-icon {
+
+
+
             .btn {
+                transition: .5s;
                 padding: 1.5rem 4rem;
                 font-size: 1.1rem;
                 background-color: $line-light-blue;
                 border: none;
                 margin-right: 2.5rem;
+
+                &:hover {
+                    background-color: $main-red-color;
+                    color: $main-white-color;
+                }
             }
 
             .icon {

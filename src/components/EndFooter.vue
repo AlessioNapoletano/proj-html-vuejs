@@ -54,10 +54,6 @@ section.end-footer {
         li {
             margin-bottom: .2rem;
 
-            &:hover {
-                display: none;
-            }
-
             a {
                 color: $main-grey-color;
             }

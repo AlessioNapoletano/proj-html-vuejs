@@ -47,7 +47,8 @@ export default {
 
         <nav>
             <ul class="d-flex">
-                <li v-for="item in navList" :class="(item.current) ? 'current-selected' : ''">
+                <li v-for="item, index in navList" :key="index" :class="(item.current) ? 'current-selected' : ''"
+                    @mouseover="item.current = true" @mouseleave="item.current = false">
                     <a href="#">
                         {{ item.name }}
                     </a>
@@ -80,6 +81,11 @@ li {
     padding-top: 1.5rem;
     margin: 0 1rem 1rem 1rem;
     cursor: pointer;
+
+    &:hover li {
+        border-top: 3px solid $main-white-color;
+        font-weight: bold;
+    }
 
     a {
         color: $main-white-color;

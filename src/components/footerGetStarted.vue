@@ -16,9 +16,12 @@ export default {
                 A wonderful serenity has taken possession Far far away, behind the word mountains.
             </p>
 
-            <button>
-                GET STARTED
-            </button>
+            <div class="button">
+                <button class="btn">
+                    GET STARTED
+                </button>
+            </div>
+
         </div>
 
     </section>
@@ -54,12 +57,21 @@ section {
 
         }
 
-        button {
-            border: none;
-            font-size: 1.1rem;
-            padding: 1.5rem 3.3rem;
-            background-color: $main-blue-color;
-            color: $main-white-color;
+        .button {
+            &:hover .btn {
+                background-color: $line-light-blue;
+            }
+
+            .btn {
+                border: none;
+                background-color: $main-blue-color;
+                color: $main-white-color;
+                cursor: pointer;
+                transition: .5s;
+                padding: 1.5rem 4rem;
+                font-size: 1.1rem;
+                border: none;
+            }
         }
     }
 

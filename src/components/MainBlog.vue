@@ -51,7 +51,7 @@ export default {
                 </div>
 
                 <div class="button">
-                    <button>
+                    <button class="btn">
                         VIEW ALL
                     </button>
                 </div>
@@ -125,11 +125,21 @@ section.blog {
             }
 
 
-            button {
-                background-color: $line-light-blue;
-                padding: 1.6rem 4.5rem;
-                border: none;
-                font-size: 1.05rem;
+            .button {
+                &:hover .btn {
+                    background-color: $main-red-color;
+                }
+
+                .btn {
+                    border: none;
+                    background-color: $line-light-blue;
+                    color: $main-white-color;
+                    cursor: pointer;
+                    transition: .5s;
+                    padding: 1.5rem 4rem;
+                    font-size: 1.1rem;
+                    border: none;
+                }
             }
         }
 
@@ -140,6 +150,11 @@ section.blog {
                 position: relative;
                 width: 49%;
                 height: 100%;
+
+                &.image:hover .box-description {
+                    background-color: $line-light-blue;
+                    top: 67%;
+                }
 
                 img {
                     width: 100%;

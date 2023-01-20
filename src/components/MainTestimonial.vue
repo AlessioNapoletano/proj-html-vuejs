@@ -121,6 +121,22 @@ section.costumer-feedback {
             width: calc(100%/3);
             padding: 3rem 5rem;
             font-size: 1.1rem;
+            transition: .7s;
+
+            &:hover:nth-child(1) {
+                background-image: url('../assets/images/oliver-ragfelt-488196-2.jpg');
+                color: $main-white-color;
+            }
+
+            &:hover:nth-child(2) {
+                background-image: url('../assets/images/12679.jpg');
+                color: $main-white-color;
+            }
+
+            &:hover:nth-child(3) {
+                background-image: url('../assets/images/oliver-ragfelt-488196-unsplash.jpg');
+                color: $main-white-color;
+            }
 
             p {
                 margin-bottom: 2.5rem;
